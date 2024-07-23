@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="log.css">
+    <link rel="stylesheet" href="log1.css">
 </head>
 <body>
     <div class="container">
         <img src="images/logo1.png" alt="" height="200px" width="18%">
+        <h2>“Business opportunities are like buses:<br>
+           there’s always another one coming.” </h2>
     </div>
     <div class="wrapper">
         <div id="error_message"> 
@@ -28,8 +30,13 @@
             <input type="password" placeholder="password" id="password">
         </div>
           <div class="btn">
-            <input type="submit" value="log in">
-            <input type="submit" value="Sign in">
+           <input type="submit" value="log in"><br>
+        </div>
+        <div class="password">
+        <a href="#"><p><br><br><br>forgot password?</p></a>
+        </div>
+        <div class="account">
+         <A href="#" ><button>Create new account</button></A>
         </div>
       </form>
     </div>
@@ -61,7 +68,7 @@
       error_message.innerHTML = text;
       return false;
     }
-    if(password.length < 9){ // 5<10
+    if(password.length < 9){ 
       text = "Please Enter Correct Password";
       error_message.innerHTML = text;
       return false;

@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600&display=swap');
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+.container{
+    height: 6000px;
+    background-color: rgb(255, 252, 255);
+}
+.basic{
+    height: 140px;
+    padding-top: 40px;
+    width: 100%;
+    font-size: 30px;
+    text-align: left;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(199, 81, 179);
+    border-bottom: 1px solid #e0e0e0;
+}
+ a :hover  {
+    background-color: aliceblue;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+.navbar .logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+.navbar .logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+.navbar .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar .menu li {
+    margin: 0 10px;
+    position: relative;
+}
+.navbar .menu li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 19px;
+}
+.navbar .menu li a:hover {
+    color: #5d428d;
+    background-color: aliceblue;
+    padding: 10px 10px 0px 10px;
+}
+.navbar .menu li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+   
+    font-size: 13px;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.navbar .menu li:hover .dropdown {
+    display: block;
+}
+.navbar .menu li .dropdown li {
+    padding: 5px 20px;
+}
+.navbar .menu li .dropdown li a {
+    font-size: 10px;
+    color: #000;
+}
+.navbar .menu li .dropdown li a:hover {
+    color: rgb(182, 48, 43);
+    background:none;
+    font-size: 15px;
+}
+.navbar .button {
+    background-color:rgb(94, 94, 105);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 19px;
+}
+.navbar .button:hover {
+    background-color: yellow;
+}
+.financial{
+    height: 600px;
+    width: 100%;
+    border: 4px solid green;
+
+}
+.financial img{
+    height: 400px;
+    width: 40%;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+.financial h1{
+    text-align: center;
+    margin-left: 450px;
+    font-size: 40px;
+    color: rgb(58, 199, 15);
+    margin-top: 10px;
+}
+.financial p{
+    margin-left:47%;
+    margin-top:-370px;
+    font-size: 33px;
+}
+.Operational{
+    height: 600px;
+    width: 100%;
+    border: 4px solid green;
+
+}
+.Operational img{
+    height: 400px;
+    width: 40%;
+    border-radius: 10px;
+    margin-left:55%;
+}
+.Operational h1{
+    text-align:left;
+    font-size: 40px;
+    color: rgb(58, 199, 15);
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.Operational p{
+    margin-top:-370px;
+    font-size: 33px;
+    margin-left: 30px;
+}
+.customer{
+    height: 600px;
+    width: 100%;
+    border: 4px solid green;
+
+}
+.customer img{
+    height: 400px;
+    width: 40%;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+.customer h1{
+    text-align: center;
+    margin-left: 450px;
+    font-size: 40px;
+    color: rgb(58, 199, 15);
+    margin-top: 10px;
+}
+.customer p{
+    margin-left:47%;
+    margin-top:-370px;
+    font-size: 33px;
+}
+.employement{
+    height: 600px;
+    width: 100%;
+    border: 4px solid green;
+
+}
+.employement img{
+    height: 400px;
+    width: 40%;
+    border-radius: 10px;
+    margin-left:55%;
+}
+.employement h1{
+    text-align:left;
+    font-size: 40px;
+    color: rgb(58, 199, 15);
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.employement p{
+    margin-top:-370px;
+    font-size: 33px;
+    margin-left: 30px;
+}
+.market{
+    height: 600px;
+    width: 100%;
+    border: 4px solid green;
+
+}
+.market img{
+    height: 400px;
+    width: 40%;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+.market h1{
+    text-align: center;
+    margin-left: 450px;
+    font-size: 40px;
+    color: rgb(58, 199, 15);
+    margin-top: 10px;
+}
+.market p{
+    margin-left:47%;
+    margin-top:-370px;
+    font-size: 33px;
+}
+.testimonial{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: 50px 0;
+    row-gap: 30px;
+    overflow: hidden;
+
+}
+.testimonial .image{
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+.testimonial .slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.slide p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    padding: 0 100px;
+}
+.slide .quote-icon{
+    font-size: 30px;
+    color: #4070f4;
+}
+.slide .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details .name{
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+.details .job{
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+
+}
+.nav-btn{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transform: translateY(20px);
+    background-color: rgba(0, 0green, 0blue, 0.1);
+}
+.nav-btn::after,
+.nav-btn::before{
+    font-size: 20px;
+    color: #fff;
+}
+
+

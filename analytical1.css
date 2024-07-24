@@ -5,7 +5,7 @@
      box-sizing: border-box;
 }
 .container{
-    height: 6000px;
+    height: 5000px;
     background-color: rgb(255, 252, 255);
 }
 .basic{
@@ -100,7 +100,7 @@
     background-color: yellow;
 }
 .financial{
-    height: 600px;
+    height: 500px;
     width: 100%;
     border: 4px solid green;
 
@@ -124,7 +124,7 @@
     font-size: 33px;
 }
 .Operational{
-    height: 600px;
+    height: 500px;
     width: 100%;
     border: 4px solid green;
 
@@ -148,7 +148,7 @@
     margin-left: 30px;
 }
 .customer{
-    height: 600px;
+    height: 500px;
     width: 100%;
     border: 4px solid green;
 
@@ -172,7 +172,7 @@
     font-size: 33px;
 }
 .employement{
-    height: 600px;
+    height: 500px;
     width: 100%;
     border: 4px solid green;
 
@@ -196,7 +196,7 @@
     margin-left: 30px;
 }
 .market{
-    height: 600px;
+    height: 500px;
     width: 100%;
     border: 4px solid green;
 
@@ -219,67 +219,112 @@
     margin-top:-370px;
     font-size: 33px;
 }
-.testimonial{
-    position: relative;
-    max-width: 900px;
-    width: 100%;
-    padding: 50px 0;
-    row-gap: 30px;
-    overflow: hidden;
-
+.marq{
+    height: 1200px;
+    background-color: #65439e;
+   
 }
-.testimonial .image{
-    height: 170px;
-    width: 170px;
-    object-fit: cover;
-    border-radius: 50%;
-
-}
-.testimonial .slide{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 30px;
-}
-.slide p{
+.marq h1{
+    color: white;
+    font-size: 40px;
     text-align: center;
-    font-size: 14px;
-    font-weight: 500;
-    color: #333;
-    padding: 0 100px;
 }
-.slide .quote-icon{
-    font-size: 30px;
-    color: #4070f4;
-}
-.slide .details{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.details .name{
-    font-size: 14px;
-    font-weight: 600;
-    color: #333;
-}
-.details .job{
-    font-size: 12px;
-    font-weight: 400;
-    color: #333;
+
+.boxes{
+    height: 400px;
+    width: 100%;
+    margin-top: 100px;
 
 }
-.nav-btn{
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    transform: translateY(20px);
-    background-color: rgba(0, 0green, 0blue, 0.1);
+.box1{
+   
+    height: 400px;
+    width: 33%;
+    background: white;
+    float: left;
+    margin-left: 3px;
 }
-.nav-btn::after,
-.nav-btn::before{
+.box1 p{
+    margin-left: 50px;
     font-size: 20px;
-    color: #fff;
 }
-
-
+.box2{
+    height: 400px;
+    width: 33%;
+    background: white;
+    float: left;
+    margin-left: 3px;
+}
+.box2 p{
+    margin-left: 50px;
+    font-size: 20px;
+}
+.box3{
+    height: 400px;
+    width: 33%;
+    background: white;
+    margin-left: 3px;
+    float: left;
+}
+.box3 p{
+    margin-left: 50px;
+    font-size: 20px;
+}
+.box4{
+    margin-top: 100px;
+    height: 400px;
+    width: 33%;
+    background: white;
+    margin-left: 3px;
+    float: left;
+}
+.box4 p{
+    margin-left: 50px;
+    font-size: 20px;
+}
+.box5{
+    margin-top: 100px;
+    height: 400px;
+    width: 33%;
+    background: white;
+    margin-left: 3px;
+    float: left;
+}
+.box5 p{
+    margin-left: 50px;
+    font-size: 20px;
+}
+.box6{
+    margin-top: 100px;
+    height: 400px;
+    width: 33%;
+    background: white;
+    margin-left: 3px;
+    float: left;
+}
+.box6 p{
+    margin-left: 50px;
+    font-size: 20px;
+}
+.dashboard{
+    margin-top: 50px;
+    height: 600px;
+    width: 90%;
+    margin-left:70px;
+    background-color: rgb(199, 130, 130);
+}
+.dashboard h1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 45px;
+    color: white;
+}
+.dashboard img{
+    margin-left: 50px;
+}
+.dashboard p{
+    margin-left: 700px;
+    color: white;
+    font-size: 25px;
+    margin-top: -440px;
+}

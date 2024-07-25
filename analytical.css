@@ -16,6 +16,19 @@
     text-align: left;
 }
 .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    
+    /* padding-bottom: 40px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(199, 81, 179);
+    border-bottom: 1px solid #e0e0e0;
+}
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -328,3 +341,84 @@
     font-size: 25px;
     margin-top: -440px;
 }
+footer{
+    margin-top: 150px;
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    }
+    footer ul li{
+    list-style: none;
+    margin-top: 20px;
+    }
+    footer .foot{
+    margin-left: 50px;
+    }
+    footer .foot h5{
+    font-size: 20px;
+    }
+    .foot11{
+    margin-top: 20px;
+    }
+    .foot12{
+    margin-top: 20px;
+    }
+    
+    .foot13{
+    margin-top: 20px; 
+    }
+    .foot13 p{
+    margin-top: 10px;
+    }
+    .foot2 h5{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 70px;
+    }
+    .foot2 form{
+    margin-left: 70px;
+    
+    }
+    .foot h5{
+    margin-top: 17px;
+    font-size: 20px;
+    
+    }
+    .foot2 h5{
+        margin-left: 70px;
+    } 
+    form input{
+    margin-top: 20px;
+    height: 40px;
+    width: 300px;
+    color: rgb(60, 22, 231);
+    border: 1px white solid;
+    border-radius: 10px;
+    outline: none;
+    margin-right: 10px;
+    
+    
+    }
+    form textarea{
+        height: 100px;
+        width: 300px;
+        margin-top: 20px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    form button{
+    margin-top: 30px;
+    height: 30px;
+    width: 200px;
+    background-color: rgb(243, 242, 242);
+    color: rgb(3, 3, 3);
+    border: 1px white solid;
+    border-radius: 10px;
+    font-size: 100%;
+    }
+    footer hr{
+    color: white;
+    margin-top: 50px;
+    }

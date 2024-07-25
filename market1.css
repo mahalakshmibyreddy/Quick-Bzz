@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+   height: 5000px;
+   background-color: rgb(255, 252, 255);
+}
+.navbar {
+   position: fixed;
+   width: 100%;
+   z-index: 1000;
+   
+   /* padding-bottom: 40px; */
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px 20px;
+   background-color: rgb(199, 81, 179);
+   border-bottom: 1px solid #e0e0e0;
+}
+.navbar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px 20px;
+   background-color: rgb(199, 81, 179);
+   border-bottom: 1px solid #e0e0e0;
+}
+a :hover  {
+   background-color: aliceblue;
+}
+
+.navbar .logo {
+   display: flex;
+   align-items: center;
+}
+.navbar .logo img {
+   height: 30px;
+   margin-right: 10px;
+}
+.navbar .logo span {
+   font-size: 24px;
+   font-weight: bold;
+   color: #000;
+}
+.navbar .menu {
+   display: flex;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+.navbar .menu li {
+   margin: 0 10px;
+   position: relative;
+}
+.navbar .menu li a {
+   text-decoration: none;
+   color: #000;
+   font-size: 19px;
+}
+.navbar .menu li a:hover {
+   color: #5d428d;
+   background-color: aliceblue;
+   padding: 10px 10px 0px 10px;
+}
+.navbar .menu li .dropdown {
+   display: none;
+   position: absolute;
+   top: 100%;
+   left: 0;
+  
+   font-size: 13px;
+   background-color: white;
+   border: 1px solid #e0e0e0;
+   list-style: none;
+   padding: 10px 0;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.navbar .menu li:hover .dropdown {
+   display: block;
+}
+.navbar .menu li .dropdown li {
+   padding: 5px 20px;
+}
+.navbar .menu li .dropdown li a {
+   font-size: 10px;
+   color: #000;
+}
+.navbar .menu li .dropdown li a:hover {
+   color: rgb(182, 48, 43);
+   background:none;
+   font-size: 15px;
+}
+.navbar .button {
+   background-color:rgb(94, 94, 105);
+   color: white;
+   padding: 10px 30px;
+   border-radius: 5px;
+   text-decoration: none;
+   font-size: 19px;
+}
+.navbar .button:hover {
+   background-color: yellow;
+}
+.market{
+   color: white;
+   text-align: center;
+   font-size: 20px;
+}
+.market h1{
+   margin-top: -620px;
+}
+.market h3{
+   margin-left: -30px;
+}
+.email{
+   margin-top: 140px;
+   height: 500px;
+   
+}
+.email h1{
+    font-size: 45px;
+    text-align: center;
+}
+.email img{
+   margin-left: 230px;
+   border-radius: 25px;
+}
+.mailchimp{
+   margin-top: 400px;
+}
+.mailchimp img{
+   margin-left: 50px;
+   border-radius: 10px;
+}
+.mailchimp h2{
+   margin-left: 730px;
+   margin-top:-380px;
+   font-size: 35px;
+}
+.mailchimp p{
+   margin-left: 730px;
+   font-size: 30px;
+}
+.hubspot{
+   margin-top: 150px;
+}
+.hubspot img{
+  margin-left: 55%;
+}
+.hubspot h2{
+   margin-top:-360px;
+   margin-left: 50px;
+   font-size: 40px;
+}
+.hubspot p{
+   margin-left: 50px;
+   font-size: 30px;
+}
+.constant{
+   margin-top: 100px;
+}
+.constant img{
+   margin-left: 50px;
+   border-radius: 10px;
+}
+.constant h1{
+   margin-left: 730px;
+   margin-top:-380px;
+   font-size: 40px;
+}
+.constant p{
+   margin-left: 730px;
+   font-size: 30px;
+}
+.blue{
+   margin-top: 150px;
+}
+.blue img{
+  margin-left: 55%;
+}
+.blue h1{
+   margin-top:-380px;
+   margin-left: 50px;
+   font-size: 40px;
+}
+.blue p{
+   margin-left: 50px;
+   font-size: 30px;
+}
+.post{
+   margin-top: 100px;
+}
+.post h1{
+   text-align: center;
+   font-size: 45px;
+   margin-left: 50px;
+}.post p{
+   margin-top:-450px;
+   text-align: center;
+   font-size: 30px;
+}
+.i1{
+   margin-left: 400px;
+   margin-top: 50px;
+}
+.i2{
+   margin-left: 50px;
+}
+.i3{
+   margin-left: 100px;
+   padding-top: 30px;
+}
+.i4{
+   margin-top: 30px;
+   margin-left: 370px;
+}
+.i5{
+   margin-left:65%;
+   margin-top:-32%;
+}
+.i6 img{
+   height: 150px;
+   width: 15%;
+   margin-left: 80%;
+   margin-top: 50px;
+}
+.i7 img{
+   height: 130px;
+   width: 11%;
+   margin-left: 83%;
+   margin-top: 70px;
+}
+.i8 img{
+   height: 150px;
+   width: 12%;
+   margin-left: 70%;
+   margin-top: 50px;
+}
+.seo h1{
+   margin-top:-200px;
+   text-align: center;
+   font-size: 50px;
+}
+.seo img{
+   margin-left: 27%;
+   border-radius: 20px;
+}
+footer{
+   margin-top: 150px;
+   height: 400px;
+   width: 100%;
+   background-color: black;
+   color: whitesmoke;
+   display: flex;
+   }
+   footer ul li{
+   list-style: none;
+   margin-top: 20px;
+   }
+   footer .foot{
+   margin-left: 50px;
+   }
+   footer .foot h5{
+   font-size: 20px;
+   }
+   .foot11{
+   margin-top: 20px;
+   }
+   .foot12{
+   margin-top: 20px;
+   }
+   
+   .foot13{
+   margin-top: 20px; 
+   }
+   .foot13 p{
+   margin-top: 10px;
+   }
+   .foot2 h5{
+   margin-top: 20px;
+   font-size: 20px;
+   margin-left: 70px;
+   }
+   .foot2 form{
+   margin-left: 70px;
+   
+   }
+   .foot h5{
+   margin-top: 17px;
+   font-size: 20px;
+   
+   }
+   .foot2 h5{
+       margin-left: 70px;
+   } 
+   form input{
+   margin-top: 20px;
+   height: 40px;
+   width: 300px;
+   color: rgb(60, 22, 231);
+   border: 1px white solid;
+   border-radius: 10px;
+   outline: none;
+   margin-right: 10px;
+   
+   
+   }
+   form textarea{
+       height: 100px;
+       width: 300px;
+       margin-top: 20px;
+       border-radius: 10px;
+       font-size: 16px;
+   }
+   form button{
+   margin-top: 30px;
+   height: 30px;
+   width: 200px;
+   background-color: rgb(243, 242, 242);
+   color: rgb(3, 3, 3);
+   border: 1px white solid;
+   border-radius: 10px;
+   font-size: 100%;
+   }
+   footer hr{
+   color: white;
+   margin-top: 50px;
+   }

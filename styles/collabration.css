@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(199, 81, 179);
+    border-bottom: 1px solid #e0e0e0;
+}
+ a :hover  {
+    background-color: aliceblue;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+.navbar .logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+.navbar .logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+.navbar .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar .menu li {
+    margin: 0 10px;
+    position: relative;
+}
+.navbar .menu li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 19px;
+}
+.navbar .menu li a:hover {
+    color: #5d428d;
+    background-color: aliceblue;
+    padding: 10px 10px 0px 10px;
+}
+.navbar .menu li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+   
+    font-size: 13px;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.navbar .menu li:hover .dropdown {
+    display: block;
+}
+.navbar .menu li .dropdown li {
+    padding: 5px 20px;
+}
+.navbar .menu li .dropdown li a {
+    font-size: 10px;
+    color: #000;
+}
+.navbar .menu li .dropdown li a:hover {
+    color: rgb(182, 48, 43);
+    background:none;
+    font-size: 15px;
+}
+.navbar .button {
+    background-color:rgb(94, 94, 105);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 19px;
+}
+.navbar .button:hover {
+    background-color: yellow;
+}
+
+
+
+
+
+
+
+
+.container6{
+    width: 100%;
+    height: 665px;
+    background-color: greenyellow;
+    border-radius: 30px;
+}
+.six h1{
+    margin-left: 400px;
+    padding-top: 70px;
+    width: 550px;
+    font-size: 40px;
+}
+.six p{
+    width: 900px;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-left: 230px;
+}
+.six iframe{
+    margin-top: 60px;
+    margin-left: 730px;
+    width: 500px;
+}
+.six h2{
+    margin-left: 220px;
+    margin-top: -180px;
+    color: red;
+}
+.container7{
+    width: 100%;
+    height: 1100px;
+    background-color: goldenrod;
+    border-radius: 30px;
+}
+.six1 h1{
+    margin-left: 80px;
+    font-size: 40px;
+    padding-top: 40px;
+}
+.six2 img{
+    margin-top: 60px;
+    margin-left: 100px;
+    max-width: 200px;
+}
+.six2 h1{
+    width: 750px;
+    margin-left: 500px;
+    margin-top: -150px;
+    font-size: 25px;
+}
+.six3 img{
+    margin-top: 100px;
+    margin-left: 1050px;
+    max-width: 200px;
+}
+.six3 h1{
+    width: 750px;
+    margin-left: 100px;
+    margin-top: -150px;
+    font-size: 25px;
+}
+.six4 img{
+    margin-top: 100px;
+    margin-left: 100px;
+    max-width: 200px;
+}
+.six4 h1{
+    width: 750px;
+    margin-left: 500px;
+    margin-top: -150px;
+    font-size: 25px;
+}
+.six5 img{
+    margin-top: 100px;
+    margin-left: 1050px;
+    max-width: 200px;
+}
+.six5 h1{
+    width: 750px;
+    margin-left: 100px;
+    margin-top: -150px;
+    font-size: 25px;
+}
+.container8{
+    width: 100%;
+    height: 1810px;
+    background-color: rgb(115, 138, 16);
+    border-radius: 30px;
+}
+.seven h1{
+    margin-left: 80px;
+    font-size: 40px;
+    padding-top: 40px;
+}
+.seven img {
+    margin-top: 60px;
+    margin-left: 300px;
+    width: 800px;
+    height: 400px;
+}
+.seven p{
+    width: 800px;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 25px;
+    margin-top: 60px;
+    margin-left: 300px;
+    padding-left: 10px;
+}
+.seven1 h1{
+    margin-top: 40px;
+    margin-left: 370px;
+    font-size: 50px;
+}
+.seven2 img{
+    margin-top: 100px;
+    margin-left: 1050px;
+    max-width: 250px;
+}
+.seven2 h1{
+    width: 750px;
+    margin-left: 100px;
+    margin-top: -130px;
+    font-size: 25px;
+}
+.seven3 img{
+    margin-top: 100px;
+    margin-left: 100px;
+    max-width: 250px;
+}
+.seven3 h1{
+    width: 750px;
+    margin-left: 500px;
+    margin-top: -130px;
+    font-size: 25px;
+}
+.seven4 img{
+    margin-top: 100px;
+    margin-left: 1050px;
+    max-width: 220px;
+}
+.seven4 h1{
+    width: 750px;
+    margin-left: 100px;
+    margin-top: -165px;
+    font-size: 25px;
+}
+.seven5 img{
+    margin-top: 100px;
+    margin-left: 100px;
+    max-width: 220px;
+}
+.seven5 h1{
+    width: 750px;
+    margin-left: 500px;
+    margin-top: -130px;
+    font-size: 25px;
+}
+.container9{
+    width: 100%;
+    height: 1300px;
+    border-radius: 30px;
+    background-color: greenyellow;
+}
+.eight h1{
+    margin-left: 80px;
+    font-size: 40px;
+    padding-top: 40px;
+}
+.eight p{
+    width: 800px;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 25px;
+    margin-top: 60px;
+    margin-left: 300px;
+    padding-left: 10px;
+}
+.eight1 img{
+    margin-top: 60px;
+    margin-left: 100px;
+    max-width: 200px;
+}
+.eight1 h1{
+    width: 750px;
+    margin-left: 500px;
+    margin-top: -160px;
+    font-size: 25px;
+}
+.eight2 img{
+    margin-top: 100px;
+    margin-left: 1050px;
+    max-width: 200px;
+}
+.eight2 h1{
+    width: 750px;
+    margin-left: 100px;
+    margin-top: -150px;
+    font-size: 25px;
+}
+.eight3 img{
+    margin-top: 60px;
+    margin-left: 100px;
+    max-width: 200px;
+}
+.eight3 h1{
+    width: 750px;
+    margin-left: 500px;
+    margin-top: -160px;
+    font-size: 25px;
+}
+.eight4 img{
+    margin-top: 100px;
+    margin-left: 1050px;
+    max-width: 200px;
+}
+.eight4 h1{
+    width: 750px;
+    margin-left: 100px;
+    margin-top: -150px;
+    font-size: 25px;
+}
+
+
+
+footer{
+    margin-top: 5px;
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    }
+    footer ul li{
+    list-style: none;
+    margin-top: 20px;
+    }
+    footer .foot{
+    margin-left: 50px;
+    }
+    footer .foot h5{
+    font-size: 20px;
+    }
+    .foot11{
+    margin-top: 20px;
+    }
+    .foot12{
+    margin-top: 20px;
+    }
+    
+    .foot13{
+    margin-top: 20px; 
+    }
+    .foot13 p{
+    margin-top: 10px;
+    }
+    .foot2 h5{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 70px;
+    }
+    .foot2 form{
+    margin-left: 70px;
+    
+    }
+    .foot h5{
+    margin-top: 17px;
+    font-size: 20px;
+    
+    }
+    .foot2 h5{
+        margin-left: 70px;
+    } 
+    form input{
+    margin-top: 20px;
+    height: 40px;
+    width: 300px;
+    color: rgb(60, 22, 231);
+    border: 1px white solid;
+    border-radius: 10px;
+    outline: none;
+    margin-right: 10px;
+    
+    
+    }
+    form textarea{
+        height: 100px;
+        width: 300px;
+        margin-top: 20px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    form button{
+    margin-top: 30px;
+    height: 30px;
+    width: 200px;
+    background-color: rgb(243, 242, 242);
+    color: rgb(3, 3, 3);
+    border: 1px white solid;
+    border-radius: 10px;
+    font-size: 100%;
+    }
+    footer hr{
+    color: white;
+    margin-top: 50px;
+    }
+
+
+
+

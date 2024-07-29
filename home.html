@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>home</title>
+    <!-- <link rel="stylesheet" href="home.css"> -->
+     <style>*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .navbar {
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: rgb(199, 81, 179);
+        border-bottom: 1px solid #e0e0e0;
+    }
+     a :hover  {
+        background-color: aliceblue;
+    }
+    
+    .navbar .logo {
+        display: flex;
+        align-items: center;
+    }
+    .navbar .logo img {
+        height: 30px;
+        margin-right: 10px;
+    }
+    .navbar .logo span {
+        font-size: 24px;
+        font-weight: bold;
+        color: #000;
+    }
+    .navbar .menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar .menu li {
+        margin: 0 10px;
+        position: relative;
+    }
+    .navbar .menu li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 19px;
+    }
+    .navbar .menu li a:hover {
+        color: #5d428d;
+        background-color: aliceblue;
+        padding: 10px 10px 0px 10px;
+    }
+    .navbar .menu li .dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+       
+        font-size: 13px;
+        background-color: white;
+        border: 1px solid #e0e0e0;
+        list-style: none;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .navbar .menu li:hover .dropdown {
+        display: block;
+    }
+    .navbar .menu li .dropdown li {
+        padding: 5px 20px;
+    }
+    .navbar .menu li .dropdown li a {
+        font-size: 10px;
+        color: #000;
+    }
+    .navbar .menu li .dropdown li a:hover {
+        color: rgb(182, 48, 43);
+        background:none;
+        font-size: 15px;
+    }
+    .navbar .button {
+        background-color:rgb(94, 94, 105);
+        color: white;
+        padding: 10px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 19px;
+    }
+    .navbar .button:hover {
+        background-color: yellow;
+    }
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    
+    .slideshow-container {
+        padding-top: 120px;
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    .container{
+        transform: translate(-100%);
+        animation: slideIn 2s forwards;
+     }
+     @keyframes slideIn{
+        to{
+         transform: translateY(0);
+        }
+     }
+    .img1 h1{
+        transform: translateY(-100%);
+        animation: slideIn 2s forwards;
+     }
+     @keyframes slideIn{
+        to{
+         transform: translateY(0 );
+        }
+     }
+     .Customers{
+        transform: translate(-100%);
+        animation: slideIn 2s forwards;
+     }
+     @keyframes slideIn{
+        to{
+         transform: translateY(0);
+        }
+     }
+    .img1 h1{
+        transform: translateY(-100%);
+        animation: slideIn 2s forwards;
+     }
+     @keyframes slideIn{
+        to{
+         transform: translateY(0 );
+        }
+     }
+     .imgs{
+        transform: translate(-100%);
+        animation: slideIn 2s forwards;
+     }
+     @keyframes slideIn{
+        to{
+         transform: translateY(0);
+        }
+     }
+    .img1 h1{
+        transform: translateY(-100%);
+        animation: slideIn 2s forwards;
+     }
+     @keyframes slideIn{
+        to{
+         transform: translateY(0 );
+        }
+     }
+    .slideshow-container .mySlides img{
+      vertical-align: middle;
+    }
+    
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 18px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      margin-top: 30px;
+      text-align: center;
+    }
+    
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active {
+      background-color: #717171;
+    }
+    
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+    .search-container {
+        margin-left: 200px;
+        display: flex;
+        height: 80px;;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: #fff;
+        width: 800px;
+    }
+    
+    #search-input {
+        border: none;
+        outline: none;
+        padding: 5px;
+        flex-grow: 1;
+    }
+    
+    #search-button {
+        border: none;
+      width: 100px;
+        outline: none;
+        padding: 10px 10px 10px 10px;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    #search-button:hover {
+        background-color:aqua;
+    }
+    
+    #results {
+        margin-top: 20px;
+    }
+    .future{
+        width: 100%;
+        height: 800px;
+        background-color: #e4f1ff;
+    
+    }
+    .future h2{
+    
+        text-align: center;
+        font-size: 40px;
+        padding-top: 20px;
+    
+    }
+    .boxes{
+        margin-left:1%;
+        width: 99.9%;
+        
+        margin-top: 30px;
+        height: 180px;
+        /* background-color: #bbb; */
+    }
+    .boxes .box1{
+        width:197px;
+        height: 100%;
+    background-color: #fefdfd;
+    border-radius: 5px;
+    float: left;
+    margin-right: 5px;
+    }
+    .boxes .box2{
+        width:197px;
+        height: 100%;
+    background-color: #fefdfd;
+    border-radius: 5px;
+    float: left;
+    margin-right: 5px;
+    }
+    .boxes .box3{
+        width:197px;
+        height: 100%;
+    background-color: #fefdfd;
+    border-radius: 5px;
+    margin-right: 5px;
+    float: left;
+    }
+    .boxes .box4{
+        width:197px;
+        height: 100%;
+    background-color: #fefdfd;
+    border-radius: 5px;
+    margin-right: 5px;
+    float: left;
+    }
+    .boxes .box5{
+        width:197px;
+        height: 100%;
+    background-color: #fefdfd;
+    border-radius: 5px;
+    margin-right: 5px;
+    float: left;
+    }
+    .boxes .box6{
+        width:100%;
+        height: 100%;
+    background-color: #fefdfd;
+    border-radius: 5px;
+    /* margin-right: 4px; */
+    
+    float: left;
+    }
+    .Customer{
+        top: 100px;
+        position: relative;
+        width: 100%;
+        height: 800px;
+        background-color:white;
+    }
+    .Customer h1{
+        /* width: 100%;
+         */position: absolute;
+         padding-left: 400px;
+        text-align: center;
+        margin-top: 20px;
+    
+    }
+    .Customer p{
+        position: absolute;
+         padding-left: 370px;
+        text-align: center;
+        margin-top: 60px;
+        font-size: 20px;
+    }
+    .Customer p1{
+        position: absolute;
+         padding-left: 80px;
+        text-align: center;
+        margin-top: 100px;
+        font-size: 20px;
+    }
+    .Callaction{
+        width: 100%;
+        height: 1100px;
+        background-color: #e4f1ff;
+        position: relative;
+        top: 780px;
+    }
+    .Callaction h1{
+          text-align: center;
+          font-size: 40px;
+        /* text-decoration: underline; */
+         padding-left:50px;
+         padding-top: 50px;
+    }
+    .Callaction p{
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+        /* color: white; */
+        /* bottom: 300px; */
+        margin-top: 40px;
+    
+    }
+    
+    
+    footer{
+        top: 500px;
+        position: relative;
+        height: 400px;
+        width: 100%;
+        background-color: black;
+        color: whitesmoke;
+        display: flex;
+        }
+        footer ul li{
+        list-style: none;
+        margin-top: 20px;
+        }
+        footer .foot{
+        margin-left: 50px;
+        }
+        footer .foot h5{
+        font-size: 20px;
+        }
+        .foot11{
+        margin-top: 20px;
+        }
+        .foot12{
+        margin-top: 20px;
+        }
+        
+        .foot13{
+        margin-top: 20px; 
+        }
+        .foot13 p{
+        margin-top: 10px;
+        }
+        .foot2 h5{
+        margin-top: 20px;
+        font-size: 20px;
+        margin-left: 70px;
+        }
+        .foot2 form{
+        margin-left: 70px;
+        
+        }
+        .foot h5{
+        margin-top: 17px;
+        font-size: 20px;
+        
+        }
+        .foot2 h5{
+            margin-left: 70px;
+        } 
+        form input{
+        margin-top: 20px;
+        height: 40px;
+        width: 300px;
+        color: rgb(60, 22, 231);
+        border: 1px white solid;
+        border-radius: 10px;
+        outline: none;
+        margin-right: 10px;
+        
+        
+        }
+        form textarea{
+            height: 100px;
+            width: 300px;
+            margin-top: 20px;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        form button{
+        margin-top: 30px;
+        height: 30px;
+        width: 200px;
+        background-color: rgb(243, 242, 242);
+        color: rgb(3, 3, 3);
+        border: 1px white solid;
+        border-radius: 10px;
+        font-size: 100%;
+        }
+        footer hr{
+        color: white;
+        margin-top: 50px;
+        }</style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="practice.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+           <ul>
+            <img src="../img/logo-removebg-preview (1).png" style="width: 130px; height: 100px;" alt= "">
+           </ul>
+        </div>
+        <ul class="menu">
+            <li><a href="home.html">Home </li>
+                <li><a href="business tool.html">Business Tools<span class="dropdown-icon">&#9662;</span></a>
+                    <ul class="dropdown">
+                        <li><a href="market1.html">Marketing Tools</a></li>
+                        <li><a href="collabration tool.html">Collabration Tools</a></li>
+                    </ul>
+                </li>
+                <li><a href="mobile1.html">Mobile App<span class="dropdown-icon">&#9662;</span></a>
+                    <ul class="dropdown">
+                        <li><a href="plan.html">Subscription Plans</a></li>
+                        
+                    </ul>
+                </li>
+                    <li><a href="customer1.html">Custumar Support<span class="dropdown-icon">&#9662;</span></a>
+                        <ul class="dropdown">
+                            <li><a href="analytical1.html">Analytics and Reporting</a></li>
+                            <li><a href="privacy1.html">Privacy and Security</a></li>
+                        </ul>
+                    </li>
+        </ul>
+        <a href="logout.html" class="button" style="color: black;">logout</a>
+        </div>
+
+     <div class="container">
+    
+            <div class="hero-section">
+              <h2 style="text-align: center; color: rgb(108, 137, 127);">Home Page</h2>
+              <div class="slideshow-container">
+              <div class="mySlides fade">
+                <h1 style="margin-top: 10px; margin-bottom: 10px;">Quickbiz Business Setup Services</h1>
+                
+                <img src="../img/big1.jpg" width="100%" alt="">
+                
+              </div>
+            
+              <div class="mySlides fade">
+                <h1>Business Setup UAE</h1>
+                <img src="../img/big2.jpg" width="100%" alt="">
+               
+              </div>
+            
+              <div class="mySlides fade">
+                <h1>Corporate Secretarial Services </h1>
+                <div class="numbertext"></div>
+                <img src="../img/img3.png " width="100%" alt="">
+                
+              </div>
+            
+              </div>
+              <br>
+              <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+              </div>
+            </div>
+     </div>
+     <div class="main">
+        <h1 style="margin-left: 220px; margin-bottom: 10px;">Search Bar</h1> 
+       <div class="search-container">
+       
+           <input style="font-size: 20px;" type="text" id="search-input" placeholder="Search...">
+           <a style="text-decoration: none; background-color: blue;color: white;padding: 5px;" href="https://www.google.com/search?q=google+&sca_esv=b97a298801241196&sca_upv=1&rlz=1C1VDKB_en-GBIN1106IN1106&sxsrf=ADLYWIKAPR6FaKYn00ZL-4-Jh1khzfxDpA%3A1722057828251&ei=ZISkZqj5DtihseMPqs2asAc&ved=0ahUKEwiou4qpvcaHAxXYUGwGHaqmBnYQ4dUDCBA&uact=5&oq=google+&gs_lp=Egxnd3Mtd2l6LXNlcnAiB2dvb2dsZSAyChAjGIAEGCcYigUyChAjGIAEGCcYigUyChAjGIAEGCcYigUyCxAAGIAEGLEDGIMBMhAQABiABBixAxiDARgUGIcCMgoQABiABBhDGIoFMgoQABiABBhDGIoFMggQABiABBixAzILEAAYgAQYsQMYgwEyChAAGIAEGEMYigVImhRQngVY6wlwAXgAkAEAmAHSAaABzQeqAQUwLjMuMrgBA8gBAPgBAZgCA6ACpwPCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICBRAAGIAEwgIKEAAYgAQYFBiHApgDAIgGAZAGCpIHBTEuMS4xoAfHIg&sclient=gws-wiz-serp">Submit</a>
+       </div>
+       <div id="results"></div>
+       <h1 style="padding-left: 50px; margin-bottom: 30px;">Featured Services:</h1>
+       <div class="future">
+      <h2>Features</h2>
+      <P style="text-align: center;font-size: 20px; padding-top: 20px;">Clinked range of features allows easy, <br>efficient and secure collaboration.
+      </P>
+      <marquee>
+      <div class="boxes">
+        <div class="box1">
+            <img src="../mini/coolab.svg" style="padding-left: 79px; margin-top: 50px;" width="120px" alt="">
+            <h1 style="font-size: 15px; text-align: center; margin-top: 35px;">collaboration</h1>
+        </div>
+        <div class="box2">
+            <img src="../mini/filesharing.png" style="padding-left: 79px; margin-top: 50px;" width="120px" alt="">
+            <h1 style="font-size: 15px; text-align: center; margin-top: 30px;">filesharing</h1>
+        </div>
+        <div class="box3">
+            <img src="../mini/keys.png" style="padding-left: 79px; margin-top: 50px;" width="120px" alt="">
+            <h1 style="font-size: 15px; text-align: center; margin-top: 30px;">keys</h1>
+        </div>
+        <div class="box4">
+            <img src="../mini/mobile.png" style="padding-left: 79px; margin-top: 50px;" width="120px" alt="">
+            <h1 style="font-size: 15px; text-align: center; margin-top: 30px;">mobile</h1>
+        </div>
+        <div class="box5">
+            <img src="../mini/setting.svg" style="padding-left: 79px; margin-top: 50px;" width="120px" alt="">
+            <h1 style="font-size: 15px; text-align: center; margin-top: 30px;">setting</h1>
+        </div>
+        <div class="box5">
+            <img src="../mini/workspace.svg" style="padding-left: 79px; margin-top: 50px;" width="120px" alt="">
+            <h1 style="font-size: 15px; text-align: center; margin-top: 30px;">workspace</h1>
+        </div>
+      </div>
+    </marquee>
+<div class="next">
+   <h1 style="padding-left: 60px; margin-top: 60px;">A Customizable Portal In<br> – Minutes Not Weeks</h1>
+   
+   <p style="padding-left: 65px; margin-top: 20px;">Clinked features combine the ease of an out-of-the-box solution and<br> the power of white-label. No need to involve IT – your portal is ready<br> in minutes and fits your needs perfectly.</p>
+   <img src="../mini/bigpik.png" style="float: right; position: relative; bottom: 200px;" alt="">
+    <h5 style="position: relative;top: 20px; font-size: 30px; padding-left: 80px;">Business service types</h5>
+   <h2 style="position: relative; top: 20px; font-size: 20px; right: 87px;"> 1.Event planning services</h2>
+    <h3 style="position: relative; top: 30px; font-size: 20px;  padding-left: 80px;"> 2.Software services</h3>
+    <h4 style="position: relative; top: 40px; font-size: 20px;  padding-left: 80px;"> 3.Training services</h4>
+</div>
+
+<div class="Customer">
+    <h1>Customer Testimonials</h1>
+    <p>Showcase reviews and testimonials on your website</p>
+    <p1>
+        One effective way to leverage reviews and testimonials is by prominently displaying them on your website. <br>This provides potential customers with social proof and reassurance that others have had positive<br> experiences with your products or services</p1>
+  
+    </div>
+      <div class="imgs">
+        <h1 style=" text-align: center;position: relative; bottom: 220px;">Reviews<br></h1>
+        <img style="position: relative;bottom: 500px;float: right" src="../mini/eview.png" width="400px" alt="">
+        <img style="position: relative;bottom: 500px; ;" src="../mini/review.png" width="400px" alt="">
+        <img style="position: relative;bottom: 500px;bottom: 220px; right: 420px;" src="../mini/review3.png" width="400px" alt="">
+        <img style="position: relative;left: 00px; bottom: 450px; left: 1100px;" src="../mini/review4.png" width="400px" alt="">
+        
+      </div>
+      </div>
+      <div class="Callaction">
+        <h1 align="center">Call to Action</h1>
+        <img src="../mini/Call-to-action.jpeg" width="1000px" style="padding-left: 190px; " alt="">
+       
+        <p>Keep reading to learn everything you need to know about social media calls to action: what they are,<br> what makes a CTA successful, and how to craft a persuasive CTA for your next campaign.<br> We’ve also included 17 call to action examples (from social media and beyond) to get you inspired.<br> That’s right: we’ve also included great examples from email campaigns and landing pages — because<br> a good CTA is a good CTA, regardless of where it’s placed.</p>
+      </div>
+      <marquee style="position: relative;top: 450px;right:120px;">
+        <img src="../mini/cta1.webp" style="padding: 10px;" width="400px" alt="">
+        <img src="../mini/cta2.webp" style="padding: 10px;" width="650px" alt="">
+        <img src="../mini/cta3.webp" style="padding: 10px;" width="400px" alt="">
+        <img src="../mini/cta1.webp" style="padding: 10px;" width="400px" alt="">
+        <img src="../mini/cta5.webp" style="padding: 10px;" width="480px" alt="">
+      </marquee>
+       </div>
+
+       <footer>
+        <div class="foot">
+            <div class="foot11">
+                <h5>MENU</h5>
+               <a style="text-decoration: none; color: #fff;" href="#"> <h5>Home</h5></a>
+            </div>
+            <div class="foot12">
+              <a style="text-decoration: none; color: #fff;" href="#"> <h5>Busines Tools</h5></a>
+            </div>
+            <div class="foot13">
+             <a style="text-decoration: none; color: #fff;" href="#"><h5>Mobile App</h5></a>
+            </div>
+            <div class="foot14">
+              <a style="text-decoration: none; color: #fff;" href="#"><h5>Custmer Support</h5></a>
+              
+            </div>
+
+            
+        </div>
+        <div class="foot">
+            <ul>
+                <li><h5>Tools&Apps</h5></li>
+                <li>Mobile Apps</li>
+                <li>Downloads</li>
+                <li>Developers</li>
+                <li>Security Center</li>
+                <li>Site Map</li>
+               
+            </ul>
+        </div>
+        <div class="foot">
+            <ul>
+                <ul>
+                
+                <li><h5>Support</h5></li>
+                <li>Help</li>
+                <li>FAQ</li>
+                <li>contact</li>
+                    </ul>
+                 </div>
+            <div class="foot">
+              <ul>
+                <li><h5>Free Tools</h5></li>
+                <li>Clip Creator</li>
+                <li>Webiste Grader</li>
+                <li>Make My persna</li>
+                <li>Library</li>
+                </ul>
+        </div>
+          <div class="foot">
+            <ul>
+                 <li><h5>Connect</h5></li> 
+               <li><a href="https://www.facebook.com/" class="social-icon"><i style="color: blue;" class="fab fa-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/" class="social-icon"><i style="color: blue;" class="fab fa-instagram"></i></a></li>
+               <li><a href="https://google.co.in/" class="social-icon"><i style="color: blue;" class="fab fa-google"></i></a></li>
+               <li><a href="https://www.youtube.com/" class="social-icon"><i style="color: blue;" class="fab fa-youtube"></i></a></li>
+            </ul> 
+        </div>  
+        <div class="foot2">
+            <h5>For More Info</h5>
+            <form action="">
+                <input type="text" placeholder="Your Name"><br>
+                <input type="text" placeholder="your Mail"><br>
+                <textarea placeholder="Comment"></textarea><br>
+                <button>Submit</button>
+            </form>
+        </div>
+        
+    </footer>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 5000); 
+          
+          document.getElementById('search-button').addEventListener('click', function() {
+    const query = document.getElementById('search-input').value;
+    const resultsContainer = document.getElementById('results');
+    resultsContainer.innerHTML = '';
+
+    if (query) {
+        
+        const resultItem = document.createElement('div');
+        resultItem.textContent = `Result for "${query}"`;
+        resultsContainer.appendChild(resultItem);
+    } else {
+        resultsContainer.textContent = 'Please enter a search query.';
+    }
+});
+          
+        }
+        
+        </script>
+</body>
+</html>
+</body>
+</html>

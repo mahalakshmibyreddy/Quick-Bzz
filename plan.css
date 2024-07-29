@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    
+    /* padding-bottom: 40px; */
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(199, 81, 179);
+    border-bottom: 1px solid #e0e0e0;
+}
+ a :hover  {
+    background-color: aliceblue;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+.navbar .logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+.navbar .logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+.navbar .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar .menu li {
+    margin: 0 10px;
+    position: relative;
+}
+.navbar .menu li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 19px;
+}
+.navbar .menu li a:hover {
+    color: #5d428d;
+    background-color: aliceblue;
+    padding: 10px 10px 0px 10px;
+}
+.navbar .menu li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+   
+    font-size: 13px;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.navbar .menu li:hover .dropdown {
+    display: block;
+}
+.navbar .menu li .dropdown li {
+    padding: 5px 20px;
+}
+.navbar .menu li .dropdown li a {
+    font-size: 10px;
+    color: #000;
+}
+.navbar .menu li .dropdown li a:hover {
+    color: rgb(182, 48, 43);
+    background:none;
+    font-size: 15px;
+}
+.navbar .button {
+    background-color:rgb(94, 94, 105);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 19px;
+    margin-left: 100px;
+}
+.navbar .button:hover {
+    background-color: yellow;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+.img img{
+    padding-top: 50px;
+    margin-left: 120px;
+}
+.head h1{
+    padding-top:150px ;
+    text-align: center;
+}
+.plan{
+    margin-left: 100px;
+    margin-top: 20px;
+    padding: 10px 10px 10px 10px;
+
+}
+.plan img{
+    margin-top: 30px;
+    background-color: #5d428d;
+    
+}
+.plan p{
+    margin-top: 20px;
+}
+  .plan h2{
+    margin-top: 30px;
+  }
+  .pro{
+    height: 400px;
+    width: 100%;
+    background-image: url(images/pic9.webp);
+  }
+  .pro h1{
+    color: red;
+    padding-left: 60px;
+    padding-top: 100px;
+    margin-top: 50px;
+
+  }
+  .pro h4{
+    color: aliceblue;
+    padding-left: 60px;
+    padding-top: 10px;
+  }
+  .para{
+    background-color:black;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #e0e0e0;
+    padding: 5px 5px 5px 5px;
+    width: 100%;
+  }
+  .pricing-table {
+    display: flex;
+    gap: 20px;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.pricing-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+}
+
+.pricing-card h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.pricing-card p {
+    margin: 5px 0;
+}
+
+.pricing-card .price {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.pricing-card .price span {
+    font-size: 0.7em;
+    color: #777;
+}
+
+.pricing-card .btn,
+.pricing-card .trial {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+.pricing-card .trial {
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.pricing-card .btn:hover,
+.pricing-card .trial:hover {
+    background-color: #b30006;
+    color: white;
+}
+
+.pricing-card .features {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.pricing-card .features i.check {
+    color: green;
+    margin-right: 5px;
+}
+.box{
+    display: flex;
+    column-gap: 50px;
+    margin-left: 70px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    
+}
+.b1{
+    height: 400px;
+    width: 500px;
+    background-color:#fff;
+}
+.b2{
+    height: 400px;
+    width: 500px;
+    background-color:#fff;
+}
+.b1 h2{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.b1 p{
+    padding-left: 20px;
+}
+.b2 h2{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.b2 p{
+    padding-left: 20px;
+}
+.box1{
+display: flex;
+column-gap: 20px;
+margin-left: 50px;
+margin-top: 50px;
+}
+.b3{
+    height: 400px;
+    width: 350px;
+    background-color:  #c2c4c2;
+}
+.b4{
+    height: 400px;
+    width: 350px;
+    background-color: #c2c4c2;
+}
+.b5{
+    height: 400px;
+    width:350px;
+    background-color: #c2c4c2;
+}
+.b3 h2{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.b3 p{
+    padding-left: 20px;
+
+}
+.b4 h2{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.b4 p{
+    padding-left: 20px;
+
+}
+.b5 h2{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.b5 p{
+    padding-left: 20px;
+
+}
+footer{
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    margin-top: 50px;
+    }
+    footer ul li{
+    list-style: none;
+    margin-top: 20px;
+    }
+    footer .foot{
+    margin-left: 50px;
+    }
+    footer .foot h5{
+    font-size: 20px;
+    }
+    .foot11{
+    margin-top: 20px;
+    }
+    .foot12{
+    margin-top: 20px;
+    }
+    
+    .foot13{
+    margin-top: 20px; 
+    }
+    .foot13 p{
+    margin-top: 10px;
+    }
+    .foot2 h5{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 70px;
+    }
+    .foot2 form{
+    margin-left: 70px;
+    
+    }
+    .foot h5{
+    margin-top: 17px;
+    font-size: 20px;
+    
+    }
+    .foot2 h5{
+        margin-left: 70px;
+    } 
+    form input{
+    margin-top: 20px;
+    height: 40px;
+    width: 300px;
+    color: rgb(60, 22, 231);
+    border: 1px white solid;
+    border-radius: 10px;
+    outline: none;
+    margin-right: 10px;
+    
+    
+    }
+    form textarea{
+        height: 100px;
+        width: 300px;
+        margin-top: 20px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    form button{
+    margin-top: 30px;
+    height: 30px;
+    width: 200px;
+    background-color: rgb(243, 242, 242);
+    color: rgb(3, 3, 3);
+    border: 1px white solid;
+    border-radius: 10px;
+    font-size: 100%;
+    }
+    footer hr{
+    color: white;
+    margin-top: 50px;
+    }

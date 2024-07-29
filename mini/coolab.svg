@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="22px" viewBox="0 0 24 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 58 (101010) - https://sketch.com -->
+    <title>2D317E8B-D021-400F-BABD-D39B99B3AFD6</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="features-page" transform="translate(-1215.000000, -405.000000)">
+            <g id="header" transform="translate(0.000000, 0.000000)">
+                <g id="features/block" transform="translate(1135.000000, 366.000000)">
+                    <g id="Group-8">
+                        <g id="icon/32/branded-icon/32/communication" transform="translate(74.000000, 32.000000)">
+                            <polygon id="Rectangle" points="0 2.55795385e-13 36 2.55795385e-13 36 36 0 36"></polygon>
+                            <g id="notification-2" transform="translate(6.000000, 8.000000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                <circle id="Oval" stroke="#2E9DFF" cx="12" cy="10" r="4"></circle>
+                                <path d="M7,19.8 C3.31557554,17.921696 0.995998399,14.1355785 0.995998399,10 C0.995998399,5.86442152 3.31557554,2.07830395 7,0.2" id="Path" stroke="#B0D2FF"></path>
+                                <path d="M17,0.2 C20.6844245,2.07830395 23.0040016,5.86442152 23.0040016,10 C23.0040016,14.1355785 20.6844245,17.921696 17,19.8" id="Path" stroke="#B0D2FF"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

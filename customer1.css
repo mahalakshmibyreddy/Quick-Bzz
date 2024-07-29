@@ -97,6 +97,15 @@
 .navbar .button:hover {
     background-color: yellow;
 }
+.header{
+    transform: translate(-100%);
+    animation: slideIn 2s forwards;
+ }
+ @keyframes slideIn{
+    to{
+     transform: translateY(0);
+    }
+ }
  h1{
     margin-top: 50px;
     text-align: center;
@@ -134,3 +143,93 @@
     margin-left: 200px;
     font-size: 30px;
 }
+.live img{
+    margin-left: 150px;
+}
+.live h2{
+    margin-left: 200px;
+    font-size: 30px;
+}
+.live p{
+    margin-left: 200px;
+    font-size: 30px;
+}
+footer{
+    margin-top: 150px;
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    }
+    footer ul li{
+    list-style: none;
+    margin-top: 20px;
+    }
+    footer .foot{
+    margin-left: 50px;
+    }
+    footer .foot h5{
+    font-size: 20px;
+    }
+    .foot11{
+    margin-top: 20px;
+    }
+    .foot12{
+    margin-top: 20px;
+    }
+    
+    .foot13{
+    margin-top: 20px; 
+    }
+    .foot13 p{
+    margin-top: 10px;
+    }
+    .foot2 h5{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 70px;
+    }
+    .foot2 form{
+    margin-left: 70px;
+    
+    }
+    .foot h5{
+    margin-top: 17px;
+    font-size: 20px;
+    
+    }
+    .foot2 h5{
+        margin-left: 70px;
+    } 
+    form input{
+    margin-top: 20px;
+    height: 40px;
+    width: 300px;
+    color: rgb(60, 22, 231);
+    border: 1px white solid;
+    border-radius: 10px;
+    outline: none;
+    margin-right: 10px;
+    }
+    form textarea{
+        height: 100px;
+        width: 300px;
+        margin-top: 20px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    form button{
+    margin-top: 30px;
+    height: 30px;
+    width: 200px;
+    background-color: rgb(243, 242, 242);
+    color: rgb(3, 3, 3);
+    border: 1px white solid;
+    border-radius: 10px;
+    font-size: 100%;
+    }
+    footer hr{
+    color: white;
+    margin-top: 50px;
+    }

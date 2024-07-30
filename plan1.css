@@ -105,8 +105,9 @@ body {font-family: Verdana, sans-serif;}
     padding-top:150px ;
     text-align: center;
 }
+
 .plan{
-    margin-left: 100px;
+    margin-left: 400px;
     margin-top: 20px;
     padding: 10px 10px 10px 10px;
 
@@ -162,6 +163,26 @@ body {font-family: Verdana, sans-serif;}
     text-align: center;
     width: 250px;
 }
+.img {
+    transform: translate(-100%);
+    animation: slideIn 2s forwards;
+ }
+ @keyframes slideIn{
+    to{
+        
+     transform: translateY(0);
+    }
+ }
+ .head h1 {
+    transform: translate(-100%);
+    animation: slideIn 2s forwards;
+ }
+ @keyframes slideIn{
+    to{
+        
+     transform: translateY(0);
+    }
+ }
 
 .pricing-card h2 {
     font-size: 1.2em;

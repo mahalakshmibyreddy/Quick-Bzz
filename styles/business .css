@@ -82,10 +82,13 @@
 .navbar .button {
     background-color:rgb(94, 94, 105);
     color: white;
-    padding: 10px 30px;
+    margin: 10px 80px;
     border-radius: 5px;
     text-decoration: none;
-    font-size: 19px;
+    font-size: 25px;
+    height: 40px;
+    width: 100px;
+    text-align: center;
 }
 .navbar .button:hover {
     background-color: yellow;
@@ -129,6 +132,16 @@
     font-size: 40px;
 
 }
+.second2{
+    transform: translate(-100%);
+    animation: slideIn 2s forwards;
+ }
+ @keyframes slideIn{
+    to{
+        
+     transform: translateY(0);
+    }
+ }
 
 .second2 img{
     margin-left: 70px;
@@ -220,21 +233,19 @@
 .third h1{
     width: 250px;
     margin-left: 100px;
-    padding-top: 100px;
+    margin-top:-300px;
     font-size: 40px;
+    
     
 }
 .third img{
     width: 450px;
-    margin-top: 30px;
+    margin-top: 90px;
     margin-left: 800px;
 }
-
 .third p{
     width: 600px;
-    
     font-size: 25px;
-    margin-top: -400px;
     margin-left: 100px;
 }
 

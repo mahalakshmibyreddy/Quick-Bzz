@@ -326,6 +326,15 @@
     margin-left:70px;
     background-color: rgb(199, 130, 130);
 }
+.dashboard{
+    transform: translate(-100%);
+    animation: slideIn 2s forwards;
+ }
+ @keyframes slideIn{
+    to{
+     transform: translateY(0);
+    }
+ }
 .dashboard h1{
     text-align: center;
     margin-top: 30px;
@@ -336,7 +345,7 @@
     margin-left: 50px;
 }
 .dashboard p{
-    margin-left: 700px;
+    margin-left: 750px;
     color: white;
     font-size: 25px;
     margin-top: -440px;

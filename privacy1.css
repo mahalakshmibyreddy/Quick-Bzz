@@ -102,6 +102,15 @@ a :hover  {
     color: white;
     font-size: 45px;
  }
+ .header{
+   transform: translate(-100%);
+   animation: slideIn 2s forwards;
+}
+@keyframes slideIn{
+   to{
+    transform: translateY(0);
+   }
+}
  .header p{
     margin-left: 45%;
     color: white;

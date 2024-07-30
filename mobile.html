@@ -25,7 +25,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px 80px;
+    margin-top:-10px;
     background-color: rgb(199, 81, 179);
     border-bottom: 1px solid #e0e0e0;
 }
@@ -125,7 +126,6 @@ body {font-family: Verdana, sans-serif;}
     margin: 0 auto;
     padding: 20px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     width: 100%;
 }
@@ -558,6 +558,16 @@ p {
     color: #000;
     margin-right: 100px;
 }
+.image-section{
+    transform: translate(-100%);
+    animation: slideIn 2s forwards;
+ }
+ @keyframes slideIn{
+    to{
+        
+     transform: translateY(0);
+    }
+ }
 
 .login-section .login-text p {
     font-size: 1em;
@@ -572,7 +582,9 @@ p {
     font-weight: bold;
     margin-right: 100px;
 }
+
 footer{
+    margin-top: 5px;
     height: 400px;
     width: 100%;
     background-color: black;
@@ -652,34 +664,33 @@ footer{
     color: white;
     margin-top: 50px;
     }
-    
 
 </style>
 <body>
     <div class="navbar">
         <div class="logo">
            <ul>
-            <img src="imgs/qu1.png" style="width: 130px; height: 100px;" alt= "">
+            <img src="images/nav logo.png" style="width: 130px; height: 100px;" alt= "">
            </ul>
         </div>
         <ul class="menu">
-            <li><a href="home.html">Home </li>
-                <li><a href="business tool.html">Business Tools<span class="dropdown-icon">&#9662;</span></a>
+            <li><a href="home1.html">Home </li>
+                <li><a href="business.html">Business Tools<span class="dropdown-icon">&#9662;</span></a>
                     <ul class="dropdown">
-                        <li><a href="market1.html">Marketing Tools</a></li>
-                        <li><a href="collabration tool.html">Collabration Tools</a></li>
+                        <li><a href="market.html">Marketing Tools</a></li>
+                        <li><a href="collabration.html">Collabration Tools</a></li>
                     </ul>
                 </li>
-                <li><a href="mobile1.html">Mobile App<span class="dropdown-icon">&#9662;</span></a>
+                <li><a href="mobile.html">Mobile App<span class="dropdown-icon">&#9662;</span></a>
                     <ul class="dropdown">
-                        <li><a href="plan.html">Subscription Plans</a></li>
+                        <li><a href="plan1.html">Subscription Plans</a></li>
                         
                     </ul>
                 </li>
-                    <li><a href="customer1.html">Custumar Support<span class="dropdown-icon">&#9662;</span></a>
+                    <li><a href="customer.html">Custumar Support<span class="dropdown-icon">&#9662;</span></a>
                         <ul class="dropdown">
-                            <li><a href="analytical1.html">Analytics and Reporting</a></li>
-                            <li><a href="privacy1.html">Privacy and Security</a></li>
+                            <li><a href="analytical.html">Analytics and Reporting</a></li>
+                            <li><a href="privacy.html">Privacy and Security</a></li>
                         </ul>
                     </li>
         </ul>
@@ -688,10 +699,6 @@ footer{
         
     <div class="container">
         <header>
-            <div class="integration">
-                <span>Integrated with</span>
-                <img src="tallyprime-logo.png" alt="TallyPrime Logo">
-            </div>
         </header>
         <main>
             <div class="content">
@@ -893,25 +900,25 @@ footer{
         </div>
     </div>
 
-      <li>Webiste Grader</li>
+      <!-- <li>Webiste Grader</li>
                 <li>Make My persna</li>
                 <li>Library</li>
-                </ul>
+                </ul> -->
         </div>
         <footer>
             <div class="foot">
                 <div class="foot11">
                     <h5>MENU</h5>
-                   <a style="text-decoration: none; color: #fff;" href="#"> <h5>Home</h5></a>
+                   <a style="text-decoration: none; color: #fff;" href="home1.html"> <h5>Home</h5></a>
                 </div>
                 <div class="foot12">
-                  <a style="text-decoration: none; color: #fff;" href="#"> <h5>Busines Tools</h5></a>
+                  <a style="text-decoration: none; color: #fff;" href="business .html"> <h5>Busines Tools</h5></a>
                 </div>
                 <div class="foot13">
-                 <a style="text-decoration: none; color: #fff;" href="#"><h5>Mobile App</h5></a>
+                 <a style="text-decoration: none; color: #fff;" href="mobile.html"><h5>Mobile App</h5></a>
                 </div>
                 <div class="foot14">
-                  <a style="text-decoration: none; color: #fff;" href="#"><h5>Custmer Support</h5></a>
+                  <a style="text-decoration: none; color: #fff;" href="customer.html"><h5>Custmer Support</h5></a>
                 </div>
                 
             </div>
@@ -957,10 +964,11 @@ footer{
             <div class="foot2">
                 <h5>For More Info</h5>
                 <form action="">
-                    <input type="text" placeholder="Your Name"><br>
-                    <input type="text" placeholder="your Mail"><br>
+                     <input  style="position: relative; bottom: 100px;" type="text" placeholder="Your Name"><br>
+                    <label style="position: relative; top: 50px; right: 310px;"  type="text" placeholder="Your Mail"><br>
+                     <input type="text" placeholder="your Mail"><br>
                     <textarea placeholder="Comment"></textarea><br>
-                    <button>Submit</button>
+                    <button style="margin-left: 50px;">Submit</button> 
                 </form>
             </div>
             
